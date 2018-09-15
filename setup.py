@@ -1,8 +1,8 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 setup(
     name="otpgen",
-    version="1.0",
-    packages=find_packages(),
-    install_requires=['pyotp'],
+    version="1.1",
+    py_modules=['otpgen'],
+    install_requires=['pyotp', 'docopt'],
     entry_points={'console_scripts': ['otpgen = otpgen:main']}
 )
